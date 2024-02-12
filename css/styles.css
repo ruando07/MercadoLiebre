@@ -24,6 +24,7 @@ body {
 .logo-header {
   margin: auto;
   width: 70%;
+
 }
 
 div.caja-input {
@@ -94,68 +95,6 @@ div.caja-input {
   width: 100%;
 }
 
-.hamburger{
-  display: none;
-}
-
-.hamburger {
-  position: fixed;
-  background-color: transparent;
-  left: 0;
-  top: 0;
-  height: 30px;
-  width: 30px;
-  padding: 20px 20px;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.25s
-    cubic-bezier(0.05, 1.04, 0.72, 0.98);
-  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-  z-index: 1002;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.hamburger.is-active {
-  background-color: none;
-}
-._layer {
-  background: #f8f6f6;
-  margin-bottom: 4px;
-  border-radius: 2px;
-  width: 28px;
-  height: 4px;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-  transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-}
-.hamburger:hover .-top {
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.hamburger:hover .-bottom {
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-}
-.hamburger.is-active .-top {
-  -webkit-transform: translateY(200%) rotate(45deg) !important;
-  -ms-transform: translateY(200%) rotate(45deg) !important;
-  transform: translateY(200%) rotate(45deg) !important;
-}
-.hamburger.is-active .-mid {
-  opacity: 0;
-}
-.hamburger.is-active .-bottom {
-  -webkit-transform: translateY(-200%) rotate(135deg) !important;
-  -ms-transform: translateY(-200%) rotate(135deg) !important;
-  transform: translateY(-200%) rotate(135deg) !important;
-}
 
 
 .menuppal.is_active {
@@ -270,7 +209,8 @@ div.main {
 .nombre-producto,
 .precio-producto,
 .envio,
-.boton-comprar {
+.boton-comprar,
+.descuento {
   font-size: 3.2vw;
   padding: 3px;
 }
@@ -283,6 +223,10 @@ div.main {
 
 .precio-producto {
   color: #42742f;
+  font-weight: bold;
+}
+.descuento{
+  color: #442f74;
   font-weight: bold;
 }
 button {
@@ -319,11 +263,17 @@ button {
   width: 40vw;
   padding-top: 10px;
   transition: transform 0.3s ease-in-out;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
 }
 img:hover {
-  transform: scale(1.2);}
+  transform: scale(1.2);} 
+  
 
 .footer {
+  padding-top: 20px;
   background-color: wheat;
   display: flex;
   flex-wrap: nowrap;
@@ -332,6 +282,7 @@ img:hover {
   align-content: flex-start;
   flex-direction: column;
   margin-top: 50px;
+  text-decoration-color: black;
 }
 
 .logo-footer i {
@@ -356,10 +307,10 @@ img:hover {
   }
   
 
-@media (min-width: 1024px) {
+@media (min-width: 720px) and (max-width: 1024px) {
   .logo-header {
     margin: auto;
-    width: 50%;
+    width: 70%;
   }
 
   .parrafo-compra {
@@ -375,7 +326,7 @@ img:hover {
   }
 
   .img-contenido {
-    width: 25vw;
+    width: 50%;
   }
 
   .nombre-producto {
@@ -395,7 +346,7 @@ img:hover {
   }
 
   .seccion {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   .footer {
     display: flex;
@@ -410,10 +361,10 @@ img:hover {
 
 
 
-@media (min-width: 1440px) {
+@media (min-width: 1224px) and (max-width: 1440px) {
   .logo-header {
     margin: auto;
-    width: 50%;
+    width: 70%;
   }
 
   .parrafo-compra {
@@ -437,19 +388,19 @@ img:hover {
   }
 
   .precio-producto {
-    font-size: 1.4vw;
+    font-size: 1vw;
   }
 
   .envio {
-    font-size: 1.4vw;
+    font-size: 1vw;
   }
 
   .boton-comprar {
-    font-size: 1.4vw;
+    font-size: 1vw;
   }
 
   .seccion {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   .footer {
     display: flex;
