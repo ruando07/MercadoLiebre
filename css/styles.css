@@ -211,7 +211,7 @@ div.main {
 .envio,
 .boton-comprar,
 .descuento {
-  font-size: 3.2vw;
+  font-size: 2.5vw;
   padding: 3px;
 }
 
@@ -261,7 +261,7 @@ button {
 
 .img-contenido {
   width: 40vw;
-  padding-top: 10px;
+  padding: 25px;
   transition: transform 0.3s ease-in-out;
   text-align: center;
   position: relative;
